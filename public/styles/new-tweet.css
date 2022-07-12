@@ -1,0 +1,37 @@
+form {
+ display: flex;
+ flex-direction: column;
+}
+
+#tweet-text {
+ overflow: hidden;
+ background-color: #f4f1ec;
+ outline:none;
+ border: none;
+ resize: none;
+ border-bottom: 3px solid #000000;
+ font-family: "Source Sans Pro", sans-serif;
+}
+
+.button-counter {
+ display: flex;
+ justify-content: space-between;
+ font-family: 'bungee', sans-serif;
+ padding: .5em 0;
+}
+
+#tweet-button {
+ border: none;
+ background-color: #4056A1;
+ color: #ffffff;
+}
+
+::placeholder {
+ font-weight: bolder;
+ color: black;
+}
+
+.invalid-count {
+ color: #ff0000;
+}
+

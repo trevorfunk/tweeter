@@ -16,7 +16,7 @@ html {
 
  body {
    color: #545149;
-   background-color: #f4f1ec;
+   background-color: #fadfc5;
    font-size: 24px;
    font-family: 'source sans pro', sans-serif;
   }
@@ -27,7 +27,7 @@ html {
 
   .container {
     width: 90vw;
-    background-color: #f4f1ec;
+    background-color: #fadfc5;
     margin: auto;
     text-align: center;
   }

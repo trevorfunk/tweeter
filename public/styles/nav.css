@@ -1,6 +1,6 @@
 nav {
- background-color: #4056A1;
- color: #FFFFFF;
+ background-color: #79616F;
+ color: #ffffff;
  height: 120px;
  width: 100vw;
  position: fixed;
@@ -13,7 +13,7 @@ nav {
 
 .logo {
 padding-left: 1.5em;
-color: #FFFFFF;
+color: #ffffff;
 font-family: 'bungee', sans-serif;
 }
 
@@ -23,6 +23,6 @@ font-family: 'bungee', sans-serif;
 }
 
 .icon {
- color: #ff0000;
+ color: black;
  text-align: center;
 }

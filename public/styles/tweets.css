@@ -26,14 +26,12 @@ article {
 }
 
 .username {
- display: flex;
  align-self: center;
  padding-left: .5em;
  color: rgba(0, 0, 0, 0.5)
 }
 
 .user-tag {
- display: flex;
  align-self: center;
  font-weight: 600;
  color: rgba(0, 0, 0, 0.5)
@@ -44,7 +42,7 @@ article {
  color:rgba(0, 0, 0, 0.5)
 }
 
-.icons, i {
+.icons i {
  padding-right: .5em;
  color:#7e9680
 }
@@ -70,6 +68,6 @@ article:hover {
  color: #79616f;
 }
 
-i:hover {
+.icons i:hover {
  color: #ae6378;
 }

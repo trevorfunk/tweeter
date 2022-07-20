@@ -40,6 +40,18 @@ $(document).ready(function() {
  $('#tweet-form').on("submit", function(event) {
    event.preventDefault();
 
+   const tweetVal = $('#tweet-text').val();
+
+   if (tweetVal === '') {
+    alert('Tweet is empty!')
+    return;
+   };
+
+   if (tweetVal.length > 140) {
+    alert('Tweet is too long, Must be 140 characters or less.')
+    return
+   }
+
    const input = $(this).serialize();
 
    $.post('/tweets', input)

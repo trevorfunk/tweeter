@@ -37,7 +37,6 @@ const renderTweets = (tweets) => {
 $(document).ready(function() {
  loadTweets();
  $('#tweet-form').on("submit", function(event) {
-
    event.preventDefault();
 
    const input = $(this).serialize();
@@ -48,3 +47,10 @@ $(document).ready(function() {
      });
   });
 });
+
+const loadTweets = () => {
+ $.get('tweets')
+   .then(tweetData => {
+     renderTweets(tweetData);
+   });
+};

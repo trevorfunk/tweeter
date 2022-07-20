@@ -5,6 +5,7 @@
  */
 
 const createTweetElement = (tweetInput) => {
+ const tweetTime = timeago.format(tweetInput.created_at);
   const $tweet = $(`<section class="tweet-container">
  <article>
         <header class="tweet-head">
@@ -18,7 +19,7 @@ const createTweetElement = (tweetInput) => {
         </header>
         <span class="tweet-content">${tweetInput.content.text}</span>
         <footer class="tweet-footer">
-          <span class="date">${tweetInput.created_at}</span>
+          <span class="date">${tweetTime}</span>
           <span class="icons"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-retweet"></i><i class="fa-solid fa-heart"></i></i></span>
         </footer>
        </article>`);

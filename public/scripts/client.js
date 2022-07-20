@@ -44,6 +44,7 @@ const renderTweets = (tweets) => {
 
 //TWEETS FROM DATA
 $(document).ready(function() {
+ $('.error-messages').hide()
  loadTweets();
  $('#tweet-form').on("submit", function(event) {
    event.preventDefault();
@@ -51,21 +52,25 @@ $(document).ready(function() {
    const tweetVal = $('#tweet-text').val();
 
    if (tweetVal === '') {
-    alert('Tweet is empty!')
+    $('.error-messages').text('Oh no! your tweet is empty').slideDown(1000)
     return;
    };
 
    if (tweetVal.length > 140) {
-    alert('Tweet is too long, Must be 140 characters or less.')
-    return
+    $('.error-messages').text('Sorry, tweets must be 140 characters or less').slideDown(1000)
+    return;
    }
 
    const input = $(this).serialize();
 
    $.post('/tweets', input)
      .then(() => {
-       loadTweets();
-     });
+      $('.error-messages').slideUp(1000);
+      loadTweets();
+     })
+     .catch((err) => {
+      console.log(err.message);
+     })
   });
 });
 

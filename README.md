@@ -17,14 +17,13 @@ Tweeter is a simple, single-page Twitter clone.
 
 
 ## <u> Final Product </u>
-tweeter page when screen size in below 1024px
-![](public/images/Screen%20Shot%202022-07-23%20at%209.15.43%20PM.jpeg) <br />
-tweeter page when screen size in above 1024px
-![](public/images/Screen%20Shot%202022-07-23%20at%209.30.28%20PM.png) <br />
-tweeter feed with toggle button
-![](public/images/Screen%20Shot%202022-07-23%20at%209.21.28%20PM.jpeg) <br />
-Tweeter page with error message
-![](public/images/Screen%20Shot%202022-07-23%20at%209.51.33%20PM.png)
+
+!["tweeter page when screen size in below 1024px"](public/images/tweeter-screen-size-below-1024px.jpeg)
+ <br />
+ !["tweeter page when screen size in above 1024px"](public/images/tweeter-screen-size-above-1024px.png)
+ <br />
+!["tweeter feed with toggle button"](public/images/tweeter-feed.jpeg) <br />
+!["Tweeter page with error message"](public/images/tweeter-error.png)
 
 ## Getting Started
 

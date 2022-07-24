@@ -1,0 +1,26 @@
+#top-button {
+ bottom: 10px;
+ right: 8px; 
+ font-family: 'bungee', sans-serif;
+ position: fixed;
+ z-index:99;
+ color: #7A8D9B; 
+}
+.top-button-word {
+ display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+ #top-button {
+  bottom: 10px;
+  right: 10px; 
+  font-family: 'bungee', sans-serif;
+  position: fixed;
+  z-index:99;
+ }
+ .top-button-word {
+  display: block;
+  font-size: 12px;
+ }
+ 
+}

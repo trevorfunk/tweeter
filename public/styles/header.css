@@ -1,15 +1,33 @@
 .app-header {
+ border-bottom: solid black;
  height: 400px;
  width: 100vw;
- background-color:#7e9680;
- background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+ margin-top: 5em;
+ background-color: #7A8D9B;
+ background-image: url("https://www.transparenttextures.com/patterns/xv.png");
  display: flex;
  align-items: center;
  justify-content: center;
  flex-flow: column wrap;
- margin-top: 5em;
 }
 
-.name {
- color: #fadfc5;
+.profile-name {
+ color: black;
+}
+
+.profile-img {
+ height: 10rem;
+}
+
+@media only screen and (min-width: 1024px) {
+ .app-header {
+  margin-right: 2rem;
+  margin-left: 5rem;
+  width: 50vw;
+   box-shadow: 5px 10px;
+   border: solid;
+   border-radius: 5px;
+   background-color:#7A8D9B;
+   color: black;
+ }
 }

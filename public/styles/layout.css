@@ -9,25 +9,32 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 /*
  * Global layout stuff
  */
-
  body {
    color: #545149;
-    background-color: #fadfc5;
+    background-color: #EED0C6;
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
    font-size: 24px;
    font-family: 'source sans pro', sans-serif;
   }
-  
   /*
   * Additional CSS can be defined below or in other CSS files, as per instructions
   */
-
   .container {
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
     width: 90vw;
-    background-color: #fadfc5;
+    background-color: #EED0C6;
     margin: auto;
     text-align: center;
+    padding-top: 5rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+   body {
+    padding-top: 5rem;
+    display: flex;
+    align-content: space-between;
+   }
   }

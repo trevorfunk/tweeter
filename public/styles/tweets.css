@@ -4,6 +4,8 @@
 }
 
 article {
+ background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+ background-color: #E3D4D0;
  margin-top: 2em;
  margin-bottom: 2em;
  border: 3px solid #000000;
@@ -13,7 +15,6 @@ article {
 
 .tweet-head {
  height: 3em;
- background-color: #fadfc5;
  display: flex;
  justify-content: space-between;
  align-self: baseline;
@@ -42,9 +43,9 @@ article {
  color:rgba(0, 0, 0, 0.5)
 }
 
-.icons i {
+.tweet-icons i {
  padding-right: .5em;
- color:#7e9680
+ color:#7A8D9B
 }
 
 .tweet-footer {
@@ -63,11 +64,20 @@ article {
  color: rgba(0, 0, 0, 0.7)
 }
 
-article:hover {
- box-shadow: 5px 10px;
- color: #79616f;
+.tweet-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
 }
 
-.icons i:hover {
- color: #ae6378;
+article:hover {
+ box-shadow: 5px 10px;
+ color: black;
+}
+
+.tweet-icons i:hover {
+ color: #B2B9BF;
+}
+
+@media only screen and (min-width: 1024px) {
 }

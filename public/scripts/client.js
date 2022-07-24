@@ -4,14 +4,12 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// Escape Function
 const escapeText = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 // ---------------------------------------------------------
-// Render Tweets
 const renderTweets = (tweets) => {
  const container = $('.tweet-container').empty();
  for (const tweet of tweets) {
@@ -19,7 +17,6 @@ const renderTweets = (tweets) => {
  }
 };
 // ---------------------------------------------------------
-// Load Tweets
 const loadTweets = () => {
  $.get('tweets')
    .then(tweetData => {
@@ -75,12 +72,11 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop : 0},800);
     return false;
   });
-
   $('#tweet-form').on("submit", function(event) {
     event.preventDefault();
 
     const tweetVal = $('#tweet-text').val();
-
+    //check for errors, empty tweets or too many characters
     if (tweetVal === '') {
       $('.error-messages').text('Oh no! your tweet is empty').slideDown(1000);
       return;
@@ -91,12 +87,12 @@ $(document).ready(function() {
     }
 
     const input = $(this).serialize();
-    
+   
     $.post('/tweets', input)
       .then(() => {
-        $('.error-messages').slideUp(1000);
+        $('.error-messages').slideUp(1000); //remove error messages if tweet follows parameters
         loadTweets();
-        $('.new-tweet').hide(1000);
+        $('.new-tweet').hide(1000); //hide new tweet once tweet is submitted
         $('#tweet-text').val("");
       })
       .catch((err) => {
@@ -105,6 +101,5 @@ $(document).ready(function() {
   });
   loadTweets();
 });
-
 // ---------------------------------------------------------
 

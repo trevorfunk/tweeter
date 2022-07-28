@@ -58,8 +58,8 @@ article {
 }
 
 .tweet-content {
- display: flex;
  justify-content: start;
+ overflow-wrap: break-word;
  margin-top: 1em;
  color: rgba(0, 0, 0, 0.7)
 }

@@ -24,6 +24,7 @@
   margin-right: 2rem;
   margin-left: 5rem;
   width: 50vw;
+  min-width: 400px;
    box-shadow: 5px 10px;
    border: solid;
    border-radius: 5px;

@@ -3,9 +3,15 @@ form {
  flex-direction: column;
 }
 
+.tweet-container {
+ flex-wrap: wrap;
+}
+
 article {
+ justify-content: center;
  border-radius: 3px;
  contain: content;
+ max-width: 700px;
 }
 
 #tweet-text {
@@ -66,5 +72,11 @@ h2 {
 @media only screen and (min-width: 1024px) {
  .container {
   padding: 5rem;
+ }
+
+ article {
+  border-radius: 3px;
+  contain: content;
+  max-width: 800px;
  }
 }

@@ -5,6 +5,10 @@ $(document).ready(function(event) {
   let charCount = $(this).val().length;
 
   if (charCount <= 140) {
+    console.log("COUNTER ", $(this)
+    .closest(".new-tweet")
+    .closest(".counter-button")
+    .find(".counter"))
    $(this)
     .closest(".new-tweet")
     .find(".counter")

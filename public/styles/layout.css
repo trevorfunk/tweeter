@@ -12,23 +12,23 @@ html {
 /*
  * Global layout stuff
  */
- body {
-   color: #545149;
-    background-color: #EED0C6;
-    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
-   font-size: 24px;
-   font-family: 'source sans pro', sans-serif;
+body {
+  color: #545149;
+  background-color: #EED0C6;
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  font-size: 24px;
+  font-family: 'source sans pro', sans-serif;
   }
   /*
   * Additional CSS can be defined below or in other CSS files, as per instructions
   */
-  .container {
-    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
-    width: 90vw;
-    background-color: #EED0C6;
-    margin: auto;
-    text-align: center;
-    padding-top: 5rem;
+.container {
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  width: 90vw;
+  background-color: #EED0C6;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
   }
 
   @media only screen and (min-width: 1024px) {
